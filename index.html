@@ -6,7 +6,7 @@
 <body>
     <div style="width: 100%"><h1>Risus Character Generator</h1> </div>
     <input type="int" id="num_characters" value=1> characters<br>
-    <input type="int" id="num_dice" value=10> dice each<br>
+    <input type="int" id="num_dice" value=4> max dice <br>
     <button type="button" onclick="start()">Generate</button>
 
     <div id="characters">
@@ -28,7 +28,7 @@ function start()
 function generate()
 {
     
-    primary_dice = parseInt(.4 * document.getElementById("num_dice").value);
+    primary_dice = document.getElementById("num_dice").value;
     secondary_dice = primary_dice - 1;
     tertiary_dice = secondary_dice - 1
     quaternary_dice = 1;
