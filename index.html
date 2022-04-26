@@ -16,19 +16,20 @@
 </head>
 <body>
     <h1>Risus Character Generator</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-2">
 
+            <div class="row">
+                <div class="col-1"><p></p></div>
+                <div class="col-3">
                     <button type="button" class="button btn-dark" onclick="generate()">Generate</button>
                     <br>
                     <button id=copyAllBtn type="button" class="button btn-light" style="visibility: hidden" onclick="copyCharacter(0, numCharacters)">Copy All</button>
                 </div>
-                <div class="col-2">
+                <div class="col-4">
                     <input type="number" size=3 max=999 id="num_characters" value=10> characters<br>
                     <input type="number" size=3 max=999 id="num_dice" value=4> dice each<br>
                 </div>
             </div>
+
             <br>
         
             <div class="row" id="characters">
@@ -36,7 +37,7 @@
                     <img src="whale.png" style="max-width:400px; align:center;">
                 </div>
             </div>
-        </div>
+        
     </div>
     
 
